@@ -164,10 +164,12 @@ try{
             teks_group.push(teks_temp.slice(0, max_long))
             teks_temp = teks_temp.slice(max_long)
         }
-        
-        teks_group.forEach((v, i) => {
+
+        let i = 0
+        for(let v of teks_group){
             await myBot.sendMessage(fc.from, `${v}\n\nPage: ${i+1}/${teks_group.length}`)
-        })
+            i++
+        }
     }
     
     fc.replyMsgPrivate = async (isi_pesan, ...entities) => {
