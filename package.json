@@ -1,0 +1,11 @@
+{
+  "name": "uzi_telegram-parser",
+  "version": "1.5.0",
+  "description": "This module is for parser message event on module node-telegram-bot-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pak Uzi",
+  "license": "ISC"
+}
